@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply scrollbar-none;
+}
+
+/* react-date-range */
+.rdrDefinedRangesWrapper {
+  @apply hidden;
+}
+
+/* draft-js */
+div.DraftEditor-root {
+  @apply h-48 overflow-y-auto scrollbar-none;
+}
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  @apply h-full;
+}
+div.public-DraftEditor-content {
+  @apply p-2.5;
+}
+div.rdrMonth {
+  @apply w-full mx-auto;
+}
